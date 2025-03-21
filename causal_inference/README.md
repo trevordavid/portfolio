@@ -94,4 +94,54 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgements
 
 - NASA Exoplanet Archive for providing the dataset
-- DoWhy library for causal inference tooling 
+- DoWhy library for causal inference tooling
+
+## Data Files
+
+This project uses large data files that are not stored in Git due to GitHub's file size limitations. To set up the project:
+
+1. Run the data fetcher to automatically download the data:
+   ```
+   python -m src.data.data_fetcher
+   ```
+
+This will populate the `data` directory with the necessary CSV files.
+
+## Project Structure
+
+- `src/`: Source code
+  - `data/`: Data handling modules
+  - `models/`: Causal inference models
+  - `visualization/`: Data visualization modules
+  - `dashboard_dash/`: Interactive dashboard
+- `data/`: Data files (not in Git)
+- `figures/`: Generated figures
+- `results/`: Analysis results
+
+## Getting Started
+
+1. Create a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Download the data:
+   ```
+   python -m src.data.data_fetcher
+   ```
+
+4. Run the analysis:
+   ```
+   python run_tests.py
+   ```
+
+5. Launch the dashboard:
+   ```
+   python run_dash.py
+   ``` 
