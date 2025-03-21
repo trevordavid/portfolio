@@ -1,2 +1,4 @@
 # Ignore csv files
 *.csv
+# Ignore csv files in all subdirectories of repo
+**/*.csv

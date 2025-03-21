@@ -1,0 +1,21 @@
+{
+  "identified_estimand": "Estimand type: EstimandType.NONPARAMETRIC_ATE\n\n### Estimand : 1\nEstimand name: backdoor\nEstimand expression:\n d                    \n\u2500\u2500\u2500\u2500(E[Y|P,R,F,G,T,M])\nd[A]                  \nEstimand assumption 1, Unconfoundedness: If U\u2192{A} and U\u2192Y then P(Y|A,P,R,F,G,T,M,U) = P(Y|A,P,R,F,G,T,M)\n\n### Estimand : 2\nEstimand name: iv\nNo such variable(s) found!\n\n### Estimand : 3\nEstimand name: frontdoor\nNo such variable(s) found!\n",
+  "causal_estimate": -0.001918052490191613,
+  "confidence_intervals": [
+    [
+      -0.027764925806445538,
+      0.02392882082606306
+    ]
+  ],
+  "refutation_results": {
+    "method": "placebo_treatment_refuter",
+    "new_effect": -5.563105531791734e-12,
+    "refutation_result": "{'p_value': 0.0, 'is_statistically_significant': True}"
+  },
+  "model_metadata": {
+    "treatment": "System Age (A)",
+    "outcome": "Exoplanet Size (Y)",
+    "estimation_method": "backdoor.linear_regression",
+    "sample_size": 2071
+  }
+}
