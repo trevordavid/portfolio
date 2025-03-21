@@ -2,3 +2,8 @@
 *.csv
 # Ignore csv files in all subdirectories of repo
 **/*.csv
+
+# Specifically ignore large NASA exoplanet data file
+nasa_exoplanet_data.csv
+causal_inference/nasa_exoplanet_data.csv
+causal_inference/data/nasa_exoplanet_data.csv
